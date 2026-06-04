@@ -10,8 +10,8 @@ app.get("/",(req,res)=>{
     let commentList = comments.map(c=>`<p>${c}</p>`).join("");
         res.send(`
             <h2>Cadastro de vírus</h2>
-            <from method="POST">
-                <input type ="text" name"comment" placeholder="digite um Virus">
+            <form method="POST">
+                <input type ="text" name="comment" placeholder="digite um Virus">
                 <button type ="submit"> instalar virus</button>
             </form>
              ${commentList}   
