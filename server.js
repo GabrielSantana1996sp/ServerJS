@@ -12,9 +12,9 @@ app.get("/",(req,res)=>{
             <h2>Cadastro de vírus</h2>
             <form method="POST">
                 <input type ="text" name="comment" placeholder="digite um Virus">
-                <button type ="submit"> instalar virus</button>
+                <button type ="submit"> instalar virus </button>
             </form>
-             ${commentList}   
+                ${commentList}   
             `);
 });
 
@@ -23,6 +23,5 @@ app.post("/",(req,res)=>{
     res.redirect("/");
 });
 
-app.listen( PORT,()=>console.log(`servidor rodando bolsinha em http://localhost:${PORT}`));
+app.listen( PORT,()=>console.log(`servidor rodando em... http://localhost:${PORT}`));
 
-//
